@@ -1,15 +1,35 @@
-@import "./utils/variables";
-@import"./utils/visuallyHidden";
+// Переменные
+@import './utils/variables';
 
-@import"./components/body";
+@import './utils/visually-hidden';
 
-@import "./components/header";
-@import "./components/logoHeader";
-@import "./components/benefits";
-@import "./components/projects";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/logoFooter";
-@import "./components/backdrop";
-@import "./components/form";
+// Сбрасывает стили списка
+@import './utils/list';
+
+@import './utils/container';
+
+// Компоненты
+@import './components/body';
+@import './components/header';
+@import './components/logo';
+@import './components/mein-nav';
+@import './components/hero';
+
+
+
+
+
+
+// @import "./utils/list";
+// @import "./utils/container";
+
+
+
+// @import "./components/benefits";
+// @import "./components/projects";
+// @import "./components/team";
+// @import "./components/clients";
+// @import "./components/footer";
+// @import "./components/logoFooter";
+// @import "./components/backdrop";
+// @import "./components/form";
