@@ -3,10 +3,11 @@
 
 @import './utils/visually-hidden';
 
-// Сбрасывает стили списка
+// Утилиты
 @import './utils/list';
-
 @import './utils/container';
+@import './utils/section';
+@import './components/button';
 
 // Компоненты
 @import './components/body';
@@ -14,14 +15,14 @@
 @import './components/logo';
 @import './components/mein-nav';
 @import './components/hero';
+@import './components/benefits';
 
 
 
 
 
 
-// @import "./utils/list";
-// @import "./utils/container";
+
 
 
 
