@@ -1,12 +1,15 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 
-  &--header {
-  margin-bottom: 0px;
+  &__benefits {
+    margin-bottom: 94px;
+  }
+  
+  &__projects {
+    margin-bottom: 94px;
   }
 }

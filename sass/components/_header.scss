@@ -2,11 +2,16 @@
   position: fixed;
   top: 0%;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translateX(-50%);
 
   width: 100%;
 
   background-color: $primary-white-color;
   border: 1px solid #ECECEC;
   z-index: 2;
+
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
 }

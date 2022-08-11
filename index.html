@@ -17,26 +17,32 @@
 
 <body>
     <!-- Шапка -->
-    <header class="header">
-        <div class="container container--header">
-            <div class="mein-nav">
-                <nav class="nav">
-                    <a href="./index.html" class="logo">Web <span class="logo--header">Studio</span></a>
-                    <ul class="nav__list list">
+    <header class="header section">
+        <div class="container">
+            <div class="header__flex">
+                <nav class="mein-nav">
+                    <a class="logo" href="./index.html" >Web 
+                        <span class="logo__header">Studio</span>
+                    </a>
+                    <ul class="site-nav list">
                         <li class="item">
-                            <a href="" class="nav__link nav-current">Студия</a>
+                            <a class="site-nav__link site-nav__link--current" href="">Студия</a>
                         </li>
-                        <li class="item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
-                        <li class="item"><a href="" class="nav__link">Контакты</a></li>
+                        <li class="item">
+                            <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="item">
+                            <a class="site-nav__link" href="">Контакты</a>
+                        </li>
                     </ul>
                 </nav>
                 
-                <ul class="nav-contact list">                    
+                <ul class="contact list">                    
                     <!-- вставляли иконки при помощи  тега img-->
                     <!-- <img src="./images/icon-gmail.svg" alt="Иконка электронная почта"> -->
-                    <li class="nav-contact__gmail item">
-                        <a href="" class="link">
-                            <svg class="contact-icon" width="18" height="14">
+                    <li class="contact__box item">
+                        <a class="contact__link" href="">
+                            <svg class="contact__icon" width="18" height="14">
                                 <use href="./images/sprite.svg#icon-gmail"></use>
                             </svg>
                             info@webstudio.com
@@ -44,9 +50,9 @@
                     </li>
                     
                     <!-- <img src="./images/icon-smartphone.svg" alt="Иконка телефон"> -->
-                    <li class="nav-contact__phone item">
-                        <a href="" class="link">
-                            <svg class="contact-icon" width="11" height="16">
+                    <li class="contact__box item">
+                        <a class="contact__link" href="">
+                            <svg class="contact__icon" width="11" height="16">
                                 <use href="./images/sprite.svg#icon-smartphone"></use>
                             </svg>
                             +38 077 777 7777
@@ -59,21 +65,21 @@
 
     <main>
         <!--Секция Герой-->
-        <section class="hero">
+        <section class="hero section">
             <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
             <button type="button" class="button primary" data-modal-open>Заказать услугу</button>            
         </section>
 
         <!--Секция Наши прeимущества -->
         <section class="benefits section">
-            <div class="container">
+            <div class="container container__benefits">
                 <h2 class="section__title visually-hidden">Наши преимущества</h2>               
-                <ul class="benefits__list list images">
+                <ul class="benefits__list list">
                     <li class="item">
                         <div class="benefits__icon" aria-label="изображение aнтенна">
                             <!-- для отображения надписи вместо при ошибках в загрузки css -->
                             <span class="visually-hidden">изображение aнтенны</span>
-                            <svg class="icon-antenna" width="65.32" height="70">
+                            <svg class="benefits__icon--antenna" width="65.32" height="70">
                                 <use href="./images/sprite.svg#antenna"></use>
                             </svg>
                         </div>
@@ -85,7 +91,7 @@
 
                     <li class="item">
                         <div class="benefits__icon">
-                            <svg class="icon-clock" width="66.96" height="70">
+                            <svg class="benefits__icon--clock" width="66.96" height="70">
                                 <use href="./images/sprite.svg#clock"></use>
                             </svg>
                         </div>
@@ -96,7 +102,7 @@
 
                     <li class="item">
                         <div class="benefits__icon">
-                            <svg class="icon-diagram" width="80" height="65">
+                            <svg class="benefits__icon--diagram" width="80" height="65">
                                 <use href="./images/sprite.svg#diagram"></use>
                             </svg>
                         </div>
@@ -107,7 +113,7 @@
 
                     <li class="item">
                         <div class="benefits__icon">
-                            <svg class="icon-astronaut" width="70" height="70">
+                            <svg class="benefits__icon--astronaut" width="70" height="70">
                                 <use href="./images/sprite.svg#astronaut"></use>
                             </svg>
                         </div>
@@ -120,22 +126,22 @@
         </section>
 
         <!--Секция Чем ми занимаемся -->
-        <section class="work">
-            <div class="container">
-                <h2 class="section-title">Чем мы занимаемся</h2>
-                <ul class="work list">
-                    <li class="item work-examples">                        
-                        <h3 class="title">ДУСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
+        <section class="projects section">
+            <div class="container container__projects">
+                <h2 class="section__title">Чем мы занимаемся</h2>
+                <ul class="projects__list list">
+                    <li class="item projects__examples">                        
+                        <h3 class="projects__title">ДУСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
                         <img src="./images/box-1.jpg" alt="Руки человека работающие на ноутбуке, который лежит на столе" width="370">
                     </li>
 
-                    <li class="item work-examples">
-                        <h3 class="title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+                    <li class="item projects__examples">
+                        <h3 class="projects__title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
                         <img src="./images/box-2.jpg" alt="Смартфон на бело-синем фоне" width="370">
                     </li>
 
-                    <li class="item work-examples">
-                        <h3 class="title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+                    <li class="item projects__examples">
+                        <h3 class="projects__title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                         <img src="./images/box-3.jpg" alt="Монитор с изображение" width="370">
                     </li>
                 </ul>
