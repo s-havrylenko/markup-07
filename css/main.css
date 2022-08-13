@@ -26,18 +26,7 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-.container__benefits {
-  margin-bottom: 94px;
-}
-.container__projects {
-  margin-bottom: 94px;
-}
-
-.section {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.section__title {
+.container__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -45,6 +34,20 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+}
+.container__benefits {
+  margin-bottom: 94px;
+}
+.container__projects {
+  margin-bottom: 94px;
+}
+.container__team {
+  margin-bottom: 94px;
+}
+
+.section {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .button {
@@ -303,4 +306,75 @@ body {
 }
 .projects .item:nth-child(3n) {
   margin-right: 0px;
+}
+
+.team {
+  display: flex;
+}
+.team__list {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19em;
+}
+.team__name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team__position {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.19em;
+}
+
+.team__item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.team__item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.networks {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.networks__item {
+  margin-right: 10px;
+}
+.networks__item__item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.networks__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.networks__link:hover, .networks__link:focus {
+  background-color: #2196f3;
+}
+
+.networks__icon {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.networks__link:hover .networks__icon {
+  fill: #ffffff;
 }/*# sourceMappingURL=main.css.map */

@@ -5,11 +5,26 @@
   padding-left: 15px;
   padding-right: 15px;
 
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
   &__benefits {
     margin-bottom: 94px;
   }
   
   &__projects {
+    margin-bottom: 94px;
+  }
+
+  &__team {
     margin-bottom: 94px;
   }
 }

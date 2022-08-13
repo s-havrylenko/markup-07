@@ -17,7 +17,7 @@
 
 <body>
     <!-- Шапка -->
-    <header class="header section">
+    <header class="header">
         <div class="container">
             <div class="header__flex">
                 <nav class="mein-nav">
@@ -71,9 +71,9 @@
         </section>
 
         <!--Секция Наши прeимущества -->
-        <section class="benefits section">
+        <section class="benefits">
             <div class="container container__benefits">
-                <h2 class="section__title visually-hidden">Наши преимущества</h2>               
+                <h2 class="container__title visually-hidden">Наши преимущества</h2>               
                 <ul class="benefits__list list">
                     <li class="item">
                         <div class="benefits__icon" aria-label="изображение aнтенна">
@@ -126,9 +126,9 @@
         </section>
 
         <!--Секция Чем ми занимаемся -->
-        <section class="projects section">
+        <section class="projects">
             <div class="container container__projects">
-                <h2 class="section__title">Чем мы занимаемся</h2>
+                <h2 class="container__title">Чем мы занимаемся</h2>
                 <ul class="projects__list list">
                     <li class="item projects__examples">                        
                         <h3 class="projects__title">ДУСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
@@ -150,42 +150,42 @@
 
         <!--Секция Наша команда -->
         <section class="team">
-            <div class="container">
-                <h2 class="section-title">Наша команда</h2>
-                <ul class="team list">
-                    <li class="item1">
+            <div class="container container__team">
+                <h2 class="container__title">Наша команда</h2>
+                <ul class="team__list list">
+                    <li class="team__item">
                         <img src="./images/nikolai.jpg" alt="Изображение сотрудника" width="270">
-                        <h3 class="title">Николай Кучеренко</h3>
-                        <p class="text">Product Designer</p>
-                        <ul class="team-sn list">
-                            <li class="item">
+                        <h3 class="team__name">Николай Кучеренко</h3>
+                        <p class="team__position">Product Designer</p>
+                        <ul class="networks list">
+                            <li class="networks__item">
                                 <!-- <a href=""><img src="./images/icon-instagram.svg" alt="Иконка Instagram"> -->
-                                <a href="" class="link background-networks">                                   
-                                    <svg class="icon">
+                                <a class="networks__link" href="">                                   
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-instagram"></use>
                                     </svg>                                    
                                 </a>
                             </li>
-                            <li class="item">
+                            <li class="networks__item">
                                 <!-- <a href=""><img src="./images/icon-twitter.svg" alt="Иконка Twitter"></a> -->
-                                <a href="" class="link background-networks">                                   
-                                    <svg class="icon">
+                                <a class="networks__link" href="">                                   
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-twitter"></use>
                                     </svg>                                    
                                 </a>
                             </li>
-                            <li class="item">
+                            <li class="networks__item">
                                 <!-- <a href=""><img src="./images/icon-facebook.svg" alt="Иконка Facebook"></a> -->
-                                <a href="" class="link background-networks">                                    
-                                    <svg class="icon">
+                                <a class="networks__link" href="">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-facebook"></use>
                                     </svg>                                   
                                 </a>
                             </li>
-                            <li class="item">
+                            <li class="networks__item">
                                 <!-- <a href=""><img src="./images/icon-ln.svg" alt="Иконка LinkedIn"></a> -->
-                                <a href="" class="link background-networks">                                    
-                                    <svg class="icon">
+                                <a class="networks__link" href="">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>                                    
                                 </a>
@@ -193,39 +193,39 @@
                         </ul>
                     </li>
 
-                    <li class="item1">
+                    <li class="team__item">
                         <img src="./images/olga.jpg" alt="Изображение сотрудника" width="270">
-                        <h3 class="title">Ольга Иванова</h3>
-                        <p class="text">Frontend Developer</p>
-                        <ul class="team-sn list">
+                        <h3 class="team__name">Ольга Иванова</h3>
+                        <p class="team__position">Frontend Developer</p>
+                        <ul class="networks list">
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-instagram.svg" alt="Иконка Instagram"> -->
-                                <a href="" class="background-networks">                                    
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-instagram"></use>
                                     </svg>                                    
                                 </a>
                             </li>
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-twitter.svg" alt="Иконка Twitter"></a> -->
-                                <a href="" class="background-networks">                                    
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-twitter"></use>
                                     </svg>                                    
                                 </a>
                             </li>
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-facebook.svg" alt="Иконка Facebook"></a> -->
-                                <a href="" class="background-networks">                                    
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-facebook"></use>
                                     </svg>                                    
                                 </a>
                             </li>
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-ln.svg" alt="Иконка LinkedIn"></a> -->
-                                <a href="" class="background-networks">                                    
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>                                    
                                 </a>
@@ -233,39 +233,39 @@
                         </ul>
                     </li>
 
-                    <li class="item1">
+                    <li class="team__item">
                         <img src="./images/andrei.jpg" alt="Изображение сотрудника" width="270">
-                        <h3 class="title">Андрей Шевченко</h3>
-                        <p class="text">Marketing</p>
-                        <ul class="team-sn list">
+                        <h3 class="team__name">Андрей Шевченко</h3>
+                        <p class="team__position">Marketing</p>
+                        <ul class="networks list">
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-instagram.svg" alt="Иконка Instagram"> -->
-                                <a href="" class="background-networks">                                    
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-instagram"></use>
                                     </svg>                                    
                                 </a>
                             </li>
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-twitter.svg" alt="Иконка Twitter"></a> -->
-                                <a href="" class="background-networks">                                    
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-twitter"></use>
                                     </svg>                                    
                                 </a>
                             </li>
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-facebook.svg" alt="Иконка Facebook"></a> -->
-                                <a href="" class="background-networks">                                    
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-facebook"></use>
                                     </svg>                                    
                                 </a>
                             </li>
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-ln.svg" alt="Иконка LinkedIn"></a> -->
-                                <a href="" class="background-networks">                                    
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>                                    
                                 </a>
@@ -273,39 +273,39 @@
                         </ul>
                     </li>
 
-                    <li class="item1">
+                    <li class="team__item">
                         <img src="./images/ivan.jpg" alt="Изображение сотрудника" width="270">
-                        <h3 class="title">Иван Николаев</h3>
-                        <p class="text">UI Designer</p>
-                        <ul class="team-sn list">
+                        <h3 class="team__name">Иван Николаев</h3>
+                        <p class="team__position">UI Designer</p>
+                        <ul class="networks list">
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-instagram.svg" alt="Иконка Instagram"> -->
-                                <a href="" class="background-networks">                                   
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                   
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-instagram"></use>
                                     </svg>                                    
                                 </a>
                             </li>
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-twitter.svg" alt="Иконка Twitter"></a> -->
-                                <a href="" class="background-networks">                                    
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-twitter"></use>
                                     </svg>                                   
                                 </a>
                             </li>
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-facebook.svg" alt="Иконка Facebook"></a> -->
-                                <a href="" class="background-networks">                                   
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                   
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-facebook"></use>
                                     </svg>                                   
                                 </a>
                             </li>
                             <li class="item">
                                 <!-- <a href=""><img src="./images/icon-ln.svg" alt="Иконка LinkedIn"></a> -->
-                                <a href="" class="background-networks">                                    
-                                    <svg class="icon">
+                                <a href="" class="networks__link">                                    
+                                    <svg class="networks__icon">
                                         <use href="./images/sprite.svg#icon-linkedin"></use>
                                     </svg>                                   
                                 </a>
