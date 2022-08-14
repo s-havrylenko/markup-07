@@ -575,55 +575,58 @@
 
 
 /* Секция Подвал */
-footer {
-  background-color: #2f303a;
+// .footer {
+//   background-color: #2f303a;
 
-  color: var(--primary-white-color);
-}
+//   color: $primary-white-color;
+// }
 
-.mein-footer {
-  display: flex;
-  align-items: center;
+// .mein-footer {
+//   display: flex;
+//   align-items: center;
 
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+//   margin-bottom: 0px;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
 
-.logo-address {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 69px;
-}
+// .footer__logo-address {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-right: 69px;
+// }
 
-.address {
-  margin-top: 20px;
+// .footer__address {
+//   margin-top: 20px;
 
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71em;
-}
+//   font-style: normal;
+//   font-size: 14px;
+//   line-height: 1.71em;
+// }
 
-.contact-footer {
-  color: var(--secondary-text-color);
+// .footer__contact {
+//   color: var(--secondary-text-color);
 
-  font-weight: 500;
-}
+//   font-weight: 500;
+// }
 
-.footer-networks {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 30px;
-}
+// .footer-networks {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-right: 30px;
+// }
 
-.footer-call {
-  margin-bottom: 20px;
+// .footer-call {
+//   margin-bottom: 20px;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71em;
-  text-transform: uppercase;
-}
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.71em;
+//   text-transform: uppercase;
+// }
+
+
+
 
 .footer-sn {
   display: flex;

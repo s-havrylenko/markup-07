@@ -31,4 +31,13 @@
   &__clients {
     margin-bottom: 94px;
   }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+  
+    margin-bottom: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }

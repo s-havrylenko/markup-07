@@ -18,18 +18,28 @@
   transition: background-color 350ms $timing-function,
   color 350ms $timing-function;
 
-  &--primary {
+  &__primary {
     color: $primary-white-color;
     background-color: $accent-color;
+
+    &--icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
-  &--secondery {
+  &__secondery {
     color: $primary-text-color;
     background-color: #F5F4FA;
   }
 
   &:hover {
     cursor: $cursor;
+  }
+
+  &__icon {
+    margin-left: 10px;
   }
 }
 

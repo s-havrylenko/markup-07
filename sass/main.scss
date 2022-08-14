@@ -1,9 +1,8 @@
 // Переменные
 @import './utils/variables';
 
-@import './utils/visually-hidden';
-
 // Утилиты
+@import './utils/visually-hidden';
 @import './utils/list';
 @import './utils/container';
 @import './utils/section';
@@ -18,7 +17,9 @@
 @import './components/benefits';
 @import './components/projects';
 @import './components/team';
+@import './components/networks';
 @import './components/clients';
+@import './components/footer';
 
 
 

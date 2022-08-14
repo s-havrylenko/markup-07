@@ -47,6 +47,13 @@
 .container__clients {
   margin-bottom: 94px;
 }
+.container__footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 section {
   padding-top: 0px;
@@ -68,16 +75,24 @@ section {
   text-align: center;
   transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1), color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button--primary {
+.button__primary {
   color: #ffffff;
   background-color: #2196f3;
 }
-.button--secondery {
+.button__primary--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button__secondery {
   color: #212121;
   background-color: #F5F4FA;
 }
 .button:hover {
   cursor: pointer;
+}
+.button__icon {
+  margin-left: 10px;
 }
 
 .bar .button.secondery:hover,
@@ -347,6 +362,8 @@ body {
 .networks {
   display: flex;
   justify-content: center;
+}
+.networks__team {
   margin-bottom: 20px;
 }
 
@@ -365,20 +382,27 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #ffffff;
   transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .networks__link:hover, .networks__link:focus {
   background-color: #2196f3;
 }
+.networks__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .networks__icon {
   width: 20px;
   height: 20px;
-  fill: #AFB1B8;
   transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .networks__link:hover .networks__icon {
+  fill: #ffffff;
+}
+.networks__icon--team {
+  fill: #AFB1B8;
+}
+.networks__icon--footer {
   fill: #ffffff;
 }
 
@@ -410,4 +434,52 @@ body {
 .clients__link:focus {
   border: 1px solid #2196f3;
   fill: #2196f3;
+}
+
+.footer {
+  background-color: #2f303a;
+  color: #ffffff;
+}
+.footer__logo-address {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 69px;
+}
+.footer__address {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71em;
+}
+.footer__contact {
+  color: #757575;
+  font-weight: 500;
+}
+.footer__networks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+.footer__call {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71em;
+  text-transform: uppercase;
+}
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__form input {
+  width: 358px;
+  margin-right: 12px;
+  padding: 14px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.24em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */
