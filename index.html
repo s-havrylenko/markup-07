@@ -440,7 +440,7 @@
                 
                 <button type="submit" class=" button button__primary button__primary--icon">
                     Подписаться
-                    <svg class="button__icon" width="24" height="24">
+                    <svg class="button__icon-footer" width="24" height="24">
                         <use href="./images/sprite.svg#icon-send"></use>
                     </svg>
                 </button>
@@ -449,42 +449,42 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="button-background" data-modal-close>
+        <div class="modal ">
+            <button class="modal__button" data-modal-close>
                 <!-- Закрить -->
-                <svg class="icon-close">
+                <svg class="modal__button-icon">
                     <use href="./images/sprite-modal.svg#close"></use>
                 </svg>
             </button>
             
             <form class="form">                              
-                <b class="call">Оставьте свои данные, мы вам перезвоним</b>
+                <b class="form__call">Оставьте свои данные, мы вам перезвоним</b>
 
-                <div class="form-field">
+                <div class="form__field">
                     <input type="text" name="name" id="name" placeholder=" " />
                     <label for="name">Имя</label>
-                    <svg class="form-icon" width="12" height="12">
+                    <svg class="form__icon" width="12" height="12">
                         <use href="./images/sprite-modal.svg#icon-name"></use>
                     </svg>
                 </div>
 
-                <div class="form-field">
+                <div class="form__field">
                     <input type="tel" name="tel" id="tel" placeholder=" " />
                     <label for="tel">Телефон</label>
-                    <svg class="form-icon" width="13" height="13">
+                    <svg class="form__icon" width="13" height="13">
                         <use href="./images/sprite-modal.svg#icon-telephone"></use>
                     </svg>
                 </div>
 
-                <div class="form-field">
+                <div class="form__field">
                     <input type="email" name="mail" id="mail" placeholder=" " />
                     <label for="mail">Почта</label>
-                    <svg class="form-icon" width="15" height="12">
+                    <svg class="form__icon" width="15" height="12">
                         <use href="./images/sprite-modal.svg#icon-mail"></use>
                     </svg>
                 </div>
 
-                <div class="form-commit">
+                <div class="form__commit">
                     <textarea class="form-field-commet" name="commet" id="" rows="6" placeholder=" "></textarea>
                     <label for="mail">Комментарий</label>
                 </div>
@@ -496,19 +496,19 @@
                     </label>
                 </div> -->
 
-                <label class="form-checkbox">
+                <label class="form__checkbox">
                     <input type="checkbox" value="" class="checkbox" />
-                    <svg class="checkbox-icon" width="16" height="15">
+                    <svg class="checkbox__icon" width="16" height="15">
                         <use href="./images/sprite-modal.svg#icon-confim"></use>
                     </svg>
 
-                    <span class="checkbox-text">
+                    <span class="checkbox__text">
                         Соглашаюсь с рассылкой и принимаю
-                        <a href="" class="form-link">Условия договора</a>   
+                        <a href="" class="checkbox__link">Условия договора</a>   
                     </span>                 
                 </label>                                                    
 
-                <button type="submit" class="button primary form-button">Отправить</button>
+                <button type="submit" class="button button__primary">Отправить</button>
             </form>
 
         </div>
@@ -518,7 +518,7 @@
 
     <script>
         const { height: pageHeaderHeight } = document
-            .querySelector(".page-header")
+            .querySelector(".header")
             .getBoundingClientRect();
         document.body.style.paddingTop = `${pageHeaderHeight}px`;        
     </script>

@@ -63,7 +63,7 @@ section {
 .button {
   border: none;
   border-radius: 4px;
-  padding: 6px 22px;
+  padding: 10px 22px;
   min-width: 73px;
   border: none;
   color: #ffffff;
@@ -91,7 +91,7 @@ section {
 .button:hover {
   cursor: pointer;
 }
-.button__icon {
+.button__icon-footer {
   margin-left: 10px;
 }
 
@@ -482,4 +482,230 @@ body {
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.2);
+  /*при scale всегда нужно учитывать translate (-50%, -50%)
+  в противном случаи окно будет сесжать */
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  min-height: 581px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__button {
+  position: relative;
+  display: flex;
+  margin-top: 7px;
+  margin-right: 16px;
+  margin-bottom: 3px;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #AFB1B8;
+}
+.modal__button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  fill: #000000;
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__button:hover {
+  cursor: pointer;
+}
+.modal__button:hover .modal__button-icon {
+  fill: #2196f3;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 40px 40px;
+}
+.form__call {
+  margin-bottom: 30px;
+}
+.form label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form__field {
+  position: relative;
+  display: flex;
+}
+.form__field:not(:last-child) {
+  margin-bottom: 50px;
+}
+.form__field input {
+  width: 448px;
+  padding: 14px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__field label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  transition: transform 350ms cubic-bezier cubic-bezier(0.4, 0, 0.2, 1) 350ms, left 350ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__field input:not(:-moz-placeholder-shown) + label {
+  left: 18px;
+  transform: translateY(-48px);
+  color: var(--accent-color);
+  -moz-transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1), left 350ms cubic-bezier(0.4, 0, 0.2, 1) 350ms, color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1), left 350ms cubic-bezier(0.4, 0, 0.2, 1) 350ms, color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__field input:not(:-ms-input-placeholder) + label {
+  left: 18px;
+  transform: translateY(-48px);
+  color: var(--accent-color);
+  -ms-transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1), left 350ms cubic-bezier(0.4, 0, 0.2, 1) 350ms, color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1), left 350ms cubic-bezier(0.4, 0, 0.2, 1) 350ms, color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__field input:focus + label, .form__field input:not(:placeholder-shown) + label {
+  left: 18px;
+  transform: translateY(-48px);
+  color: var(--accent-color);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1), left 350ms cubic-bezier(0.4, 0, 0.2, 1) 350ms, color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__field input:hover + label {
+  color: #2196f3;
+}
+
+.form__field input:hover {
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
+
+.form__commit {
+  position: relative;
+  margin-bottom: 20px;
+}
+.form__commit textarea {
+  resize: none;
+  width: 448px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__commit textarea:hover {
+  border: 1px solid #2196f3;
+}
+.form__commit label {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__commit textarea:not(:-moz-placeholder-shown) + label {
+  transform: translateY(-36px);
+  color: #2196f3;
+}
+.form__commit textarea:not(:-ms-input-placeholder) + label {
+  transform: translateY(-36px);
+  color: #2196f3;
+}
+.form__commit textarea:focus + label, .form__commit textarea:not(:placeholder-shown) + label {
+  transform: translateY(-36px);
+  color: #2196f3;
+}
+.form__commit textarea:hover + label {
+  color: #2196f3;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  fill: #212121;
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__field input:focus ~ .form__icon, .form__field input:hover ~ .form__icon {
+  fill: #2196f3;
+}
+
+.form__checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Скрываем стандартный чекбокс */
+.checkbox {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+   appearance: none; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100);
+          clip-path: inset(100);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox__icon {
+  position: absolute;
+  margin-right: 8px;
+  fill: #ffffff;
+  border: 2px solid #212121;
+}
+.checkbox__text {
+  margin-left: 22px;
+  margin-right: 4px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.checkbox__link {
+  color: #2196f3;
+}
+
+.checkbox:checked + .checkbox__icon {
+  border-color: #2196f3;
+  background-color: #2196f3;
+  background-size: contain;
+  background-origin: content-box;
 }/*# sourceMappingURL=main.css.map */
