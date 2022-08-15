@@ -78,15 +78,23 @@
 
     text-decoration: none;
 
-    transition: color 350ms $timing-function;    
+    transition: color 350ms $timing-function;
   }
 
   &__icon {
     margin-right: 10px;
+    transition: fill 350ms $timing-function;
   }
 }
 
-.contact__box:hover .contact__link,
-.contact__box:focus .contact__link {
-  color: $accent-color;
+.contact__box {
+  &:hover .contact__link,
+  &:focus .contact__link {
+    color: $accent-color;
+  }
+
+  &:hover .contact__icon,
+  &:focus .contact__icon {
+    fill: $accent-color;
+  }
 }

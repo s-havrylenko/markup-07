@@ -9,8 +9,8 @@
   background: rgba(0, 0, 0, 0.2);
 
   transition: opacity 500ms $timing-function;
-  
-  z-index: 1;
+
+  // z-index: 1;
 }
 
 .is-hidden {
@@ -131,14 +131,14 @@
     left: 18px;
     transform: translateY(-48px);
   
-    color: var(--accent-color);
+    color: $accent-color;
   
     transition: transform 350ms $timing-function,
       left 350ms $timing-function 350ms,
       color 500ms $timing-function;
   }
 
-  & input:hover+label {
+  & input:hover + label {
     color: $accent-color;
   }
 }
@@ -148,11 +148,26 @@
   cursor: $cursor;
 }
 
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+
+  fill: $primary-text-color;
+
+  transition: fill 350ms $timing-function;
+
+  .form__field input:focus~&,
+  .form__field input:hover~& {
+    fill: $accent-color;
+  }
+}
 
 .form__commit {
   position: relative;
   margin-bottom: 20px;
-
+  
   & textarea {
     resize: none;
     width: 448px;
@@ -166,6 +181,7 @@
 
   & textarea:hover {
     border: 1px solid $accent-color;
+    cursor: $cursor;
   }
 
   & label {
@@ -184,24 +200,8 @@
     color: $accent-color;
   }
 
-  & textarea:hover+label {
+  & textarea:hover + label {
     color: $accent-color;
-  }
-}
-
-.form__icon {
-  position: absolute;
-  top: 50%;
-  left: 19px;
-  transform: translateY(-50%);
-
-  fill: $primary-text-color;
-
-  transition: fill 350ms $timing-function;
-
-  .form__field input:focus ~ &,
-  .form__field input:hover ~ & {
-    fill: $accent-color;
   }
 }
 
@@ -210,6 +210,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+
+  &:hover {
+    cursor: $cursor;
+  }
 }
 
 /* Скрываем стандартный чекбокс */
